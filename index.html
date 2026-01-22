@@ -3,8 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yujia Zhang</title>
-  <meta name="description" content="Personal academic website of Yujia Zhang." />
+  <title>Yujia Zhang - Machine Learning Researcher | PhD in Computer Engineering</title>
+  <meta name="description" content="Yujia Zhang, PhD - Machine Learning Resident at Amii specializing in knowledge graphs, language models, RAG, and agentic LLM applications." />
+  <meta name="keywords" content="Yujia Zhang, Machine Learning, Knowledge Graphs, LLM, RAG, NLP, AI Research" />
+  <meta name="author" content="Yujia Zhang" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yujia Zhang - ML Researcher" />
+  <meta property="og:description" content="PhD in Computer Engineering specializing in knowledge graphs, language models, and retrieval-augmented generation." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta property="og:url" content="https://yujia0223.github.io/" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Yujia Zhang - ML Researcher" />
+  <meta name="twitter:description" content="PhD specializing in knowledge graphs and language models" />
+  <meta name="twitter:image" content="assets/profile.jpg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/profile.jpg" />
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -45,8 +64,11 @@
 </head>
 
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="visually-hidden-focusable position-absolute top-0 start-0 bg-primary text-white p-2 m-2 text-decoration-none">Skip to main content</a>
+  
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" role="navigation" aria-label="Main navigation">
     <div class="container site-wrap">
       <a class="navbar-brand fw-semibold" href="#home">Yujia Zhang</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,6 +78,7 @@
       <div class="collapse navbar-collapse" id="navMain">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -73,12 +96,12 @@
   </nav>
 
   <!-- Page -->
-  <main class="container site-wrap my-4">
+  <main id="main-content" class="container site-wrap my-4">
     <div class="row g-4">
       <!-- Left profile card -->
       <aside class="col-12 col-lg-4">
         <div class="card shadow-sm profile-card">
-          <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Yujia Zhang">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Yujia Zhang, PhD" loading="lazy" width="400" height="400">
           <div class="card-body">
             <h1 class="h4 mb-1">Yujia Zhang, Ph.D.</h1>
             <div class="small-muted mb-3">Machine Learning Resident · Amii · Edmonton, Canada</div>
@@ -98,21 +121,21 @@
               <!-- Update these URLs if you want exact profile links -->
               <a class="btn btn-outline-secondary btn-sm"
                  href="https://scholar.google.com/citations?user=gk-KtnkAAAAJ&hl=en"
-                 target="_blank" rel="noopener">Google Scholar</a>
+                 target="_blank" rel="noopener noreferrer">Google Scholar</a>
 
               <a class="btn btn-outline-secondary btn-sm"
-                 href="https://github.com/"
-                 target="_blank" rel="noopener">GitHub (Yujia)</a>
+                 href="https://github.com/yujia0223"
+                 target="_blank" rel="noopener noreferrer">GitHub</a>
 
               <a class="btn btn-outline-secondary btn-sm"
-                 href="https://www.linkedin.com/"
-                 target="_blank" rel="noopener">LinkedIn (Yujia-Zhang-PhD)</a>
+                 href="https://www.linkedin.com/in/yujia-zhang-phd"
+                 target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
 
             <hr class="my-4">
 
             <div class="small-muted">
-              Put your CV at <code>assets/CV.pdf</code> and your photo at <code>assets/profile.jpg</code>.
+              Please contact me if you are interested into collaboration.
             </div>
           </div>
         </div>
@@ -144,6 +167,60 @@
                 Machine learning researcher with 8+ years of experience developing and deploying ML models,
                 specializing in knowledge graphs and language models. Experienced with deep learning frameworks
                 (PyTorch, TensorFlow) and cloud platforms (GCP).
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div id="skills" class="card shadow-sm section-card mb-4">
+          <div class="card-body">
+            <h2 class="h4 section-title mb-3">Skills</h2>
+            
+            <div class="mb-3">
+              <div class="fw-semibold mb-2">Programming & Frameworks</div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">Python</span>
+                <span class="badge bg-secondary">PyTorch</span>
+                <span class="badge bg-secondary">TensorFlow</span>
+                <span class="badge bg-secondary">Hugging Face</span>
+                <span class="badge bg-secondary">scikit-learn</span>
+                <span class="badge bg-secondary">NumPy</span>
+                <span class="badge bg-secondary">Pandas</span>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <div class="fw-semibold mb-2">ML/AI Specialization</div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">Large Language Models</span>
+                <span class="badge bg-secondary">Knowledge Graphs</span>
+                <span class="badge bg-secondary">RAG Systems</span>
+                <span class="badge bg-secondary">NLP</span>
+                <span class="badge bg-secondary">Deep Learning</span>
+                <span class="badge bg-secondary">Fine-tuning</span>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <div class="fw-semibold mb-2">Tools & Platforms</div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">Docker</span>
+                <span class="badge bg-secondary">Git</span>
+                <span class="badge bg-secondary">Flask</span>
+                <span class="badge bg-secondary">REST APIs</span>
+                <span class="badge bg-secondary">Google Cloud Platform</span>
+                <span class="badge bg-secondary">Jupyter</span>
+              </div>
+            </div>
+            
+            <div>
+              <div class="fw-semibold mb-2">Research & Analysis</div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-secondary">Statistical Analysis</span>
+                <span class="badge bg-secondary">Data Visualization</span>
+                <span class="badge bg-secondary">Model Evaluation</span>
+                <span class="badge bg-secondary">Technical Writing</span>
               </div>
             </div>
           </div>
@@ -355,9 +432,9 @@
           <div class="card-body">
             <h2 class="h4 section-title mb-3">Resources</h2>
             <ul class="mb-0">
-              <li><a href="#" title="Add a link to your slides folder">Slides (add link)</a></li>
-              <li><a href="#" title="Add a link to your code/projects">Code (add link)</a></li>
-              <li><a href="#" title="Add a link to datasets if any">Datasets (add link)</a></li>
+              <li><a href="https://github.com/yujia0223" target="_blank" rel="noopener noreferrer">Code & Projects on GitHub</a></li>
+              <li><a href="https://scholar.google.com/citations?user=gk-KtnkAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Publications & Citations</a></li>
+              <li><a href="assets/CV.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
             </ul>
           </div>
         </div>
@@ -380,6 +457,33 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yujia Zhang",
+    "jobTitle": "Machine Learning Resident",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Alberta Machine Intelligence Institute (Amii)"
+    },
+    "url": "https://yujia0223.github.io/",
+    "email": "yujia10@ualberta.ca",
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "University of Alberta"
+    },
+    "knowsAbout": ["Machine Learning", "Knowledge Graphs", "Large Language Models", "Natural Language Processing", "Retrieval-Augmented Generation", "Deep Learning"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=gk-KtnkAAAAJ&hl=en",
+      "https://github.com/yujia0223",
+      "https://www.linkedin.com/in/yujia-zhang-phd"
+    ]
+  }
+  </script>
+  
   <script>
     // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
@@ -398,7 +502,7 @@
     });
 
     // Active section highlighting
-    const sections = ["home","research","experience","projects","publications","service","teaching","awards","news","resources","others"]
+    const sections = ["home","skills","research","experience","projects","publications","service","teaching","awards","news","resources","others"]
       .map(id => document.getElementById(id))
       .filter(Boolean);
 
