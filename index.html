@@ -14,17 +14,13 @@
       --site-max: 1100px;
       --card-radius: 16px;
     }
-    body{
-      background: #f7f8fa;
-    }
-    .site-wrap{
-      max-width: var(--site-max);
-    }
+    body{ background:#f7f8fa; }
+    .site-wrap{ max-width: var(--site-max); }
     .profile-card{
       border-radius: var(--card-radius);
       overflow: hidden;
       position: sticky;
-      top: 86px; /* below navbar */
+      top: 86px;
     }
     .profile-photo{
       width: 100%;
@@ -32,15 +28,8 @@
       object-fit: cover;
       background: #e9ecef;
     }
-    .soft-card{
-      border-radius: var(--card-radius);
-    }
-    .section-card{
-      border-radius: var(--card-radius);
-    }
-    .section-title{
-      scroll-margin-top: 96px; /* offset for fixed navbar */
-    }
+    .section-card{ border-radius: var(--card-radius); }
+    .section-title{ scroll-margin-top: 96px; }
     .news-date{
       min-width: 120px;
       font-weight: 600;
@@ -50,12 +39,8 @@
       color: #6c757d;
       font-size: 0.95rem;
     }
-    .nav-link.active{
-      font-weight: 600;
-    }
-    footer{
-      color: #6c757d;
-    }
+    .nav-link.active{ font-weight: 600; }
+    footer{ color: #6c757d; }
   </style>
 </head>
 
@@ -73,9 +58,11 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
           <li class="nav-item"><a class="nav-link" href="#service">Professional Service</a></li>
           <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
           <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
           <li class="nav-item"><a class="nav-link" href="assets/CV.pdf" target="_blank" rel="noopener">CV</a></li>
           <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
@@ -91,34 +78,42 @@
       <!-- Left profile card -->
       <aside class="col-12 col-lg-4">
         <div class="card shadow-sm profile-card">
-          <img class="profile-photo" src="assets/profile.jpg" alt="Your portrait">
+          <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Yujia Zhang">
           <div class="card-body">
-            <h1 class="h4 mb-1">Yujia Zhang</h1>
-            <div class="small-muted mb-3">Your Title · Your Organization</div>
+            <h1 class="h4 mb-1">Yujia Zhang, Ph.D.</h1>
+            <div class="small-muted mb-3">Machine Learning Resident · Amii · Edmonton, Canada</div>
 
             <div class="mb-3">
-              <div><a href="mailto:you@domain.com">you@domain.com</a></div>
-              <div><a href="mailto:you2@domain.com">you2@domain.com</a></div>
+              <div class="fw-semibold">Contact</div>
+              <div><a href="mailto:yujia10@ualberta.ca">yujia10@ualberta.ca</a></div>
+              <div class="small-muted">+1 (587) 566-3898</div>
             </div>
 
             <div class="mb-3">
               <div class="fw-semibold">Affiliation</div>
-              <div class="small-muted">Department / Lab</div>
-              <div class="small-muted">University / Institute</div>
-              <div class="small-muted">City, Country</div>
+              <div class="small-muted">Alberta Machine Intelligence Institute (Amii)</div>
+              <div class="small-muted">Edmonton, Canada</div>
             </div>
 
             <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-outline-secondary btn-sm" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-              <a class="btn btn-outline-secondary btn-sm" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-              <a class="btn btn-outline-secondary btn-sm" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="btn btn-outline-secondary btn-sm" href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+              <!-- Update these URLs if you want exact profile links -->
+              <a class="btn btn-outline-secondary btn-sm"
+                 href="https://scholar.google.com/citations?user=gk-KtnkAAAAJ&hl=en"
+                 target="_blank" rel="noopener">Google Scholar</a>
+
+              <a class="btn btn-outline-secondary btn-sm"
+                 href="https://github.com/"
+                 target="_blank" rel="noopener">GitHub (Yujia)</a>
+
+              <a class="btn btn-outline-secondary btn-sm"
+                 href="https://www.linkedin.com/"
+                 target="_blank" rel="noopener">LinkedIn (Yujia-Zhang-PhD)</a>
             </div>
 
             <hr class="my-4">
 
             <div class="small-muted">
-              Tip: put your CV at <code>assets/CV.pdf</code> and your photo at <code>assets/profile.jpg</code>.
+              Put your CV at <code>assets/CV.pdf</code> and your photo at <code>assets/profile.jpg</code>.
             </div>
           </div>
         </div>
@@ -132,22 +127,24 @@
             <h2 class="h4 section-title mb-3">Home</h2>
 
             <p class="mb-2">
-              I am <strong>Yujia Zhang</strong>, a <strong>Machine Learning Resident</strong> at
-              <a href="https://www.amii.ca/" target="_blank" rel="noopener">Alberta Machine Intelligence Institute</a>.
-              Before joining, I was <strong> a Ph.D. student </strong> working with
-              <a href="https://apps.ualberta.ca/directory/person/reformat" target="_blank" rel="noopener">Marek Reformat</a>
-              at <a href="https://www.ualberta.ca/en/index.html" target="_blank" rel="noopener">University of Alberta</a>.
+              I am <strong>Yujia Zhang (Ph.D.)</strong>, a <strong>Machine Learning Resident</strong> at
+              <a href="https://www.amii.ca/" target="_blank" rel="noopener">Alberta Machine Intelligence Institute (Amii)</a>
+              in Edmonton, Canada.
             </p>
 
             <p class="mb-2">
-              I obtained my PhD in <strong>CElectrical & Computer Engineering Dept</strong> from <strong>University of Alberta</strong>.
-              My research focuses on <strong>Large Language Models</strong>, <strong>Gen AI</strong>, <strong>Agentic Ai</strong>and <strong>Knowledge Graphs</strong>.
+              I earned my <strong>Ph.D. in Computer Engineering</strong> from the <strong>University of Alberta</strong>
+              (Sept. 2019 – Nov. 2024). My research and applied work focus on
+              <strong>knowledge graphs</strong>, <strong>language models</strong>, <strong>retrieval-augmented generation (RAG)</strong>,
+              and <strong>agentic LLM applications</strong>.
             </p>
 
             <div class="alert alert-light border mt-3 mb-0">
-              <div class="fw-semibold mb-1">Research themes</div>
+              <div class="fw-semibold mb-1">Summary</div>
               <div class="small-muted">
-                1) Domain Knowledge Integration · 2) Representation Learning & Synthetic Data · 3) Decision-making Agents
+                Machine learning researcher with 8+ years of experience developing and deploying ML models,
+                specializing in knowledge graphs and language models. Experienced with deep learning frameworks
+                (PyTorch, TensorFlow) and cloud platforms (GCP).
               </div>
             </div>
           </div>
@@ -158,9 +155,9 @@
           <div class="card-body">
             <h2 class="h4 section-title mb-3">Research</h2>
             <ul class="mb-0">
-              <li><strong>Topic 1:</strong> One-line description of your work.</li>
-              <li><strong>Topic 2:</strong> One-line description of your work.</li>
-              <li><strong>Topic 3:</strong> One-line description of your work.</li>
+              <li><strong>Knowledge Graphs:</strong> topic hierarchies, hierarchical analysis, and generative modeling for KGs.</li>
+              <li><strong>LLMs for Information Extraction:</strong> fine-tuning and data augmentation for triple extraction from text.</li>
+              <li><strong>RAG & Agentic LLMs:</strong> building practical, industry-ready systems and deployment pipelines.</li>
             </ul>
           </div>
         </div>
@@ -169,83 +166,140 @@
         <div id="experience" class="card shadow-sm section-card mb-4">
           <div class="card-body">
             <h2 class="h4 section-title mb-3">Experience</h2>
-            <ul class="mb-0">
-              <li><strong>2025–Present:</strong> Role, Organization</li>
-              <li><strong>2023–2025:</strong> Role, Organization</li>
-              <li><strong>2019–2023:</strong> Role, Organization</li>
-            </ul>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div class="fw-semibold">Machine Learning Resident · Amii</div>
+                <div class="small-muted">Mar 2025 – Present · Edmonton, Canada</div>
+              </div>
+              <ul class="mb-0">
+                <li>Delivered end-to-end LLM projects: client scoping, data analysis, scalable model building, actionable insights.</li>
+                <li>Developed a RAG system and exposed it via a Flask REST API; containerized with Docker for deployment consistency.</li>
+                <li>Translated research on agentic LLMs into practical, industry-ready applications.</li>
+              </ul>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div class="fw-semibold">Data Analyst · Nanoprecise Sci Corp</div>
+                <div class="small-muted">May 2019 – Oct 2019 · Edmonton, Canada</div>
+              </div>
+              <ul class="mb-0">
+                <li>Performed EDA on sensor signal data for predictive maintenance; achieved ~95% failure detection accuracy using Random Forest.</li>
+                <li>Migrated and optimized firmware code to Python, improving pipeline efficiency and scalability.</li>
+                <li>Built dashboards/visualizations to communicate findings to technical and non-technical stakeholders.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="d-flex justify-content-between flex-wrap gap-2">
+                <div class="fw-semibold">R&amp;D Product Engineer · YUNGTAY Elevator Equipment (China)</div>
+                <div class="small-muted">May 2015 – Jul 2016 · Shanghai, China</div>
+              </div>
+              <ul class="mb-0">
+                <li>Led data collection and QA for elevator measurement data; ensured compliance with industry standards.</li>
+                <li>Conducted statistical analysis and quality control; authored 26 technical reports with recommendations.</li>
+                <li>Collaborated cross-functionally to resolve discrepancies and optimize product performance.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="card shadow-sm section-card mb-4">
+          <div class="card-body">
+            <h2 class="h4 section-title mb-3">Projects</h2>
+
+            <div class="mb-3">
+              <div class="fw-semibold">Knowledge Graph Construction via Large Language Models (LLM)</div>
+              <div class="small-muted">University of Alberta · Jun 2023 – May 2024 · Edmonton, Canada</div>
+              <ul class="mb-0">
+                <li>Built an efficient system for constructing KGs from unstructured text by fine-tuning LLMs.</li>
+                <li>Designed a scalable deployment pipeline using Hugging Face Transformers; optimized inference for Llama 3 and Mistral (Autotrain workflow).</li>
+                <li>Developed scalable fine-tuning workflows; reduced training time by ~30% across diverse datasets (e.g., WebNLG, SKE).</li>
+                <li>Key finding: smaller ~7B models can match or exceed larger models on specific tasks (e.g., triple extraction).</li>
+              </ul>
+            </div>
+
+            <div class="mb-3">
+              <div class="fw-semibold">Hierarchical Analysis for Knowledge Graphs (KGs)</div>
+              <div class="small-muted">University of Alberta · May 2020 – Dec 2023 · Edmonton, Canada</div>
+              <ul class="mb-0">
+                <li>Developed a non-parametric hierarchical generative model for KGs via probabilistic topic modeling.</li>
+                <li>Implemented efficient Gibbs sampling in Python for scalable inference and improved performance.</li>
+                <li>Evaluated on standard datasets; produced results comparable to established hierarchical clustering approaches.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="fw-semibold">Object Detection and Tracking</div>
+              <div class="small-muted">Chonbuk National University · Aug 2016 – Aug 2018 · Jeonju, South Korea</div>
+              <ul class="mb-0">
+                <li>Researched Siamese networks, LSTM/CNN/RNN for tracking and recognition in TensorFlow/Python.</li>
+                <li>Improved tracking accuracy/robustness; increased mAP on benchmark datasets via architecture and training optimization.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <!-- Publications -->
         <div id="publications" class="card shadow-sm section-card mb-4">
-        <div class="card-body">
+          <div class="card-body">
             <h2 class="h4 section-title mb-3">Publications</h2>
 
             <div class="mb-3">
-            <a href="https://scholar.google.com/citations?user=gk-KtnkAAAAJ&hl=en"
-                target="_blank" rel="noopener">
+              <a href="https://scholar.google.com/citations?user=gk-KtnkAAAAJ&hl=en" target="_blank" rel="noopener">
                 View full list on Google Scholar
-            </a>
+              </a>
             </div>
 
             <ol class="mb-0">
-            <li>
-                <span class="text-muted">PhD Thesis Paper:</span>
-                <strong>Constructing Knowledge Graphs with Language Models and Learning Hierarchies from Graphs using Probabilistic Topic Modeling</strong>,
-                Sept. 2024
-            </li>
-
-            <li>
+              <li>
+                <span class="text-muted">PhD Thesis:</span>
+                <strong>Constructing Knowledge Graphs with Language Models and Learning Hierarchies from Graphs using Probabilistic Topic Modeling</strong>, Sept. 2024
+              </li>
+              <li>
                 <span class="text-muted">Journal:</span>
                 <strong>Construction of Topic Hierarchy with Subtree Representation for Knowledge Graphs</strong>,
                 <em>Axioms</em> 2025, 14, 300, Apr. 2025
                 <a href="https://doi.org/10.3390/axioms14040300" target="_blank" rel="noopener">Link</a>
-            </li>
-
-            <li>
+              </li>
+              <li>
                 <strong>Fine-tuning Language Models for Triple Extraction with Data Augmentation</strong>,
                 Knowledge Graphs and Large Language Models (KaLLM) Workshop,
-                62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024), Aug. 2024
-            </li>
-
-            <li>
+                ACL 2024, Aug. 2024
+              </li>
+              <li>
                 <strong>Hierarchical Topic Models for Knowledge Graphs</strong>,
-                19th European Semantic Web Conference (ESWC 2022), Hersonissos, Greece, June 2022
-            </li>
-
-            <li>
+                ESWC 2022, Hersonissos, Greece, Jun. 2022
+              </li>
+              <li>
                 <strong>Robust Object Tracking with Convolutional Gated Recurrent Networks</strong>,
-                International Symposium on Information Technology Convergence (ISITC 2017), Shijiazhuang, China, May 2017
-            </li>
-
-            <li>
+                ISITC 2017, Shijiazhuang, China, May 2017
+              </li>
+              <li>
                 <strong>Deep Residual Convolutional Network for Natural Image Denoising and Brightness Enhancement</strong>,
-                2018 International Conference on Platform Technology and Service (PlatCon-18), Jeju, Korea, May 2018
-            </li>
-
-            <li>
+                PlatCon-18, Jeju, Korea, May 2018
+              </li>
+              <li>
                 <strong>Object Tracking via Spatial-Temporal Learning Combined Correlation Filter</strong>,
                 Smart Media 2018, Seoul, Korea, Feb. 2018
-            </li>
-
-            <li>
-                <span class="text-muted">Master Thesis Paper:</span>
-                <strong>Efficient Correlation Matching-Based Real-Time Object Tracking with Spatiotemporal Information</strong>,
-                June 2018
-            </li>
+              </li>
+              <li>
+                <span class="text-muted">Master Thesis:</span>
+                <strong>Efficient Correlation Matching-Based Real-Time Object Tracking with Spatiotemporal Information</strong>, Jun. 2018
+              </li>
             </ol>
+          </div>
         </div>
-        </div>
-
 
         <!-- Professional Service -->
         <div id="service" class="card shadow-sm section-card mb-4">
           <div class="card-body">
             <h2 class="h4 section-title mb-3">Professional Service</h2>
             <ul class="mb-0">
-              <li>Reviewer: Conference / Journal</li>
-              <li>Program Committee: Conference</li>
+              <li><strong>Publicity Chair:</strong> ICTAI 2022</li>
+              <!-- Add reviewer / PC roles here when you want -->
             </ul>
           </div>
         </div>
@@ -255,8 +309,22 @@
           <div class="card-body">
             <h2 class="h4 section-title mb-3">Teaching</h2>
             <ul class="mb-0">
-              <li>Course name (Term, Role)</li>
-              <li>Course name (Term, Role)</li>
+              <li><strong>ECE 493</strong> Software Systems Design Project (TA) · Jan 2024 – Apr 2024</li>
+              <li><strong>ECE 627</strong> Intelligent Web (TA) · Jan 2023 – Apr 2023</li>
+              <li><strong>ECE 447</strong> Data Analysis and Machine Learning for Engineers (TA) · Jan 2023 – Apr 2023</li>
+              <li><strong>ENCMP 100</strong> Computer Programming for Engineers (TA) · Jan 2021 – Apr 2021</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Awards -->
+        <div id="awards" class="card shadow-sm section-card mb-4">
+          <div class="card-body">
+            <h2 class="h4 section-title mb-3">Awards</h2>
+            <ul class="mb-0">
+              <li><strong>J Gordin Kaplan Graduate Student Award</strong> · University of Alberta · Aug 2024</li>
+              <li><strong>Brain Korea 21 Scholarship</strong> · Aug 2017</li>
+              <li><strong>BECKHOFF Scholarship</strong> · Shanghai University of Engineering Science · Jul 2014</li>
             </ul>
           </div>
         </div>
@@ -268,16 +336,16 @@
 
             <div class="d-grid gap-3">
               <div class="d-flex gap-3">
-                <div class="news-date">Aug 13, 2025</div>
-                <div>Paper “Title here” accepted at <strong>Journal/Conference</strong>.</div>
+                <div class="news-date">Mar 2025</div>
+                <div>Joined <strong>Amii</strong> as a <strong>Machine Learning Resident</strong>.</div>
               </div>
               <div class="d-flex gap-3">
-                <div class="news-date">Jan 15, 2025</div>
-                <div>Workshop paper accepted at <strong>Venue</strong>.</div>
+                <div class="news-date">Apr 2025</div>
+                <div>Journal paper published in <strong>Axioms</strong> (Topic Hierarchy for Knowledge Graphs).</div>
               </div>
               <div class="d-flex gap-3">
-                <div class="news-date">Dec 20, 2024</div>
-                <div>Joined <strong>Organization</strong> as <strong>Role</strong>.</div>
+                <div class="news-date">Aug 2024</div>
+                <div>Received <strong>J Gordin Kaplan Graduate Student Award</strong> (University of Alberta).</div>
               </div>
             </div>
           </div>
@@ -288,9 +356,9 @@
           <div class="card-body">
             <h2 class="h4 section-title mb-3">Resources</h2>
             <ul class="mb-0">
-              <li><a href="#">Slides</a></li>
-              <li><a href="#">Code</a></li>
-              <li><a href="#">Datasets</a></li>
+              <li><a href="#" title="Add a link to your slides folder">Slides (add link)</a></li>
+              <li><a href="#" title="Add a link to your code/projects">Code (add link)</a></li>
+              <li><a href="#" title="Add a link to datasets if any">Datasets (add link)</a></li>
             </ul>
           </div>
         </div>
@@ -299,7 +367,9 @@
         <div id="others" class="card shadow-sm section-card">
           <div class="card-body">
             <h2 class="h4 section-title mb-3">Others</h2>
-            <p class="mb-0">Add hobbies, talks, blog posts, or anything else here.</p>
+            <p class="mb-0">
+              Add talks, volunteering, or personal interests here (e.g., TELUS World of Science volunteer, May 2024).
+            </p>
           </div>
         </div>
 
@@ -323,14 +393,13 @@
         if (!el) return;
         e.preventDefault();
         el.scrollIntoView({ behavior: "smooth", block: "start" });
-        // close navbar on mobile
         const nav = document.getElementById("navMain");
         if (nav.classList.contains("show")) new bootstrap.Collapse(nav).toggle();
       });
     });
 
     // Active section highlighting
-    const sections = ["home","research","experience","publications","service","teaching","news","resources","others"]
+    const sections = ["home","research","experience","projects","publications","service","teaching","awards","news","resources","others"]
       .map(id => document.getElementById(id))
       .filter(Boolean);
 
